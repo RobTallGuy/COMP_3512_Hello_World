@@ -8,10 +8,11 @@
 // RETURN: the greatest common denominator of a and b.
 int gcd(const int a, const int b)
 {
-	int d;
-	(a > b) ? d = b : d = a;
-	for (int c = d; c > 0; c--) {
-		return (!(c%d)) ? c : 0;
+	int largest;
+	(a > b) ? largest = b : largest = a;
+	for (int denominator = largest; denominator > 0; denominator--) {
+
+		return (!(denominator%largest)) ? denominator : 0;
 	}
 }
 
