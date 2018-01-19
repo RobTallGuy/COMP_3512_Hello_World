@@ -11,7 +11,6 @@ int gcd(const int a, const int b)
 	int largest;
 	(a > b) ? largest = b : largest = a;
 	for (int denominator = largest; denominator > 0; denominator--) {
-
 		return (!(denominator%largest)) ? denominator : 0;
 	}
 }
@@ -22,5 +21,5 @@ int gcd(const int a, const int b)
 // RETURN: the nth positive integer in the Fibonacci sequence.
 long long fibonacci(const int n)
 {
-	return (n < 3) ?  1 :  fibonacci(n - 1) + fibonacci(n - 2); 
+	return (n < 3) ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
 }
